@@ -1,0 +1,165 @@
+<style>
+    .intro-section {
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+    .search-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .product-category {
+        width: 200px;
+    }
+    .search-input {
+        width: 300px;
+        background-color: rgb(19, 23, 42);
+        margin-right: 10px;
+        border-color: rgba(255,255,255,0.5);
+        color: white;
+    }
+    .form-control {
+        background-color: transparent;
+        color: black;
+    }
+    .form-control::placeholder {
+        color: rgba(255,255,255,0.5);
+        opacity: 1;
+    }
+    .form-control:-ms-input-placeholder {
+        color: rgba(255,255,255,0.5);
+    }
+    .form-control::-ms-input-placeholder {
+        color: rgba(255,255,255,0.5);
+    }
+    .product-item {
+        background-color: rgb(19,23,42);
+        border: 1px solid rgb(35,39,61);
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .product-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .product-name {
+        color: white;
+    }
+    .product-description {
+        color: rgb(173,178,203);
+    }
+    .product-warranty {
+        color: rgb(242,178,212);
+    }
+    .product-price {
+        color: white;
+    }
+    .product-rating {
+        color: #FFD700;
+        margin-top: 10px;
+    }
+    .product-actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .space-x {
+        margin: 0 5px;
+    }
+</style>
+<app-header></app-header>
+<div class="container">
+    <div class="intro-section">
+        <h1>Đây là trong home</h1>
+        <p>Trang này hiển thị danh sách các sản phẩm, kèm ảnh</p>
+        <p>Các bạn có thể chọn xem sản phẩm và mua hàng tại đây</p>
+    </div>
+    <div class="search-box">
+        <input type="text" class="form-control search-input" placeholder="Tìm sản phẩm">
+        <select class="form-control product-category">
+            <option selected disabled>Danh mục sản phẩm</option>
+            <option>Nike</option>
+            <option>Adidas</option>
+            <option>Puma</option>
+        </select>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+                <img
+                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cdf407be-ef9c-4325-beb3-15c6cd663790/air-jordan-1-mid-se-shoes-jbRhW6.png"
+                    alt="Product Image"
+                    class="product-image">
+                <h3 class="product-name">Air Jordan 1 Mid SE</h3>
+                <p class="product-description">Nike</p>
+                <p class="product-warranty">Bảo hành: 12 tháng</p>
+                <p class="product-price">Giá: <del>$200</del> $149</p>
+                <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    <span class="space-x"></span>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+                <img
+                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/91dbc52f-7169-4de3-9ba0-a77be6b94eb0/air-jordan-1-mid-shoes-86f1ZW.png"
+                    alt="Product Image"
+                    class="product-image">
+                <h3 class="product-name">Air Jordan 1 Mid</h3>
+                <p class="product-description">Nike</p>
+                <p class="product-warranty">Bảo hành: 12 tháng</p>
+                <p class="product-price">Giá: <del>$240</del> $209</p>
+                <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    <span class="space-x"></span>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="product-item">
+                <img
+                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8f5874ee-4398-4516-a168-c034a9abbb3b/air-jordan-1-low-quai-54-shoes-FmKDX1.png"
+                    alt="Product Image"
+                    class="product-image">
+                <h3 class="product-name">Air Jordan 1 Low Quai 54</h3>
+                <p class="product-description">Nike</p>
+                <p class="product-warranty">Bảo hành: 12 tháng</p>
+                <p class="product-price">Giá: <del>$150</del> $119</p>
+                <div class="product-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-alt"></i>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    <span class="space-x"></span>
+                    <button class="btn btn-success">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
